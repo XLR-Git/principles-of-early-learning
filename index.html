@@ -8,7 +8,6 @@
     :root {
       --primary: #2c5aa0;
       --light-bg: #f9f5f0;
-      --text: #333;
     }
     
     body {
@@ -16,7 +15,7 @@
       margin: 0;
       padding: 0;
       background-color: var(--light-bg);
-      color: var(--text);
+      color: #333;
       line-height: 1.7;
     }
 
@@ -36,7 +35,7 @@
     }
 
     .logo-img {
-      height: 80px;
+      height: 85px;
     }
 
     .container {
@@ -58,7 +57,7 @@
 
     .hero {
       background: white;
-      padding: 3rem 2rem;
+      padding: 3.5rem 2rem;
       border-radius: 16px;
       text-align: center;
       box-shadow: 0 5px 25px rgba(0,0,0,0.08);
@@ -76,11 +75,26 @@
       margin: 15px;
       box-shadow: 0 6px 20px rgba(44, 90, 160, 0.3);
     }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+      margin-top: 3rem;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <div class="bilingual-toggle">
-    <button onclick="alert('中文 version coming soon ❤️')">EN / 中文</button>
+    <button onclick="alert('中文版本即将上线 ❤️')">EN / 中文</button>
   </div>
 
   <header>
@@ -89,8 +103,8 @@
            alt="Principles of Early Learning" 
            class="logo-img">
       <div>
-        <h1 style="margin:0; font-size: 2.2rem;">Principles of Early Learning</h1>
-        <p style="margin:0; font-size: 1.3rem;">早教原则</p>
+        <h1 style="margin:0; font-size: 2.3rem;">Principles of Early Learning</h1>
+        <p style="margin:5px 0 0 0; font-size: 1.35rem;">早教原则</p>
       </div>
     </div>
   </header>
@@ -98,31 +112,42 @@
   <div class="container">
     <div class="hero">
       <h2>Welcome to Our Interactive Community Hub</h2>
-      <p style="font-size: 1.25em; max-width: 700px; margin: 1.5rem auto;">
-        A warm space where parents from China and America can connect, 
-        share experiences, learn together, and support each other in raising the next generation.
+      <p style="font-size: 1.25em; max-width: 720px; margin: 1.8rem auto;">
+        A warm and respectful space where parents from China and America can connect, 
+        share experiences, support each other, and grow together in early childhood education.
       </p>
       
-      <a href="#" class="cta-button">🚀 Join Live Conversation</a>
+      <a href="#" class="cta-button">🚀 Join Live Conversation Room</a>
       <a href="#" class="cta-button" style="background:#555;">💬 Start a Discussion</a>
     </div>
 
     <h2 style="text-align:center; color: var(--primary);">What You Can Do Here</h2>
     
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
-      <div style="background:white; padding: 2rem; border-radius: 12px; text-align:center; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+    <div class="feature-grid">
+      <div class="feature-card">
         <h3>🌍 Live Video Rooms</h3>
-        <p>Real-time voice & video conversations between Chinese and American parents</p>
+        <p>Join real-time voice and video conversations with parents from both countries.</p>
       </div>
-      <div style="background:white; padding: 2rem; border-radius: 12px; text-align:center; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+      <div class="feature-card">
         <h3>💬 Real-time Discussions</h3>
-        <p>Share stories, parenting challenges, and joyful moments</p>
+        <p>Share reflections, questions, and parenting insights in our community forum.</p>
       </div>
-      <div style="background:white; padding: 2rem; border-radius: 12px; text-align:center; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
-        <h3>🤝 Find Parent Friends</h3>
-        <p>Connect with parents who have children of similar ages</p>
+      <div class="feature-card">
+        <h3>🤝 Connect with Parents</h3>
+        <p>Find and connect with parents who have children of similar ages and interests.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📚 Learning Resources</h3>
+        <p>Access bilingual materials, PowerPoint tips, and practical guidance.</p>
       </div>
     </div>
+
+    <div style="text-align: center; margin: 4rem 0; font-size: 1.1em; color: #555;">
+      <p>This is a safe, kind, and meaningful space built for parents who care deeply about the first three years of life.</p>
+      <p><strong>Be respectful • Be open-hearted • Let's raise the next generation together.</strong></p>
+    </div>
   </div>
+</body>
+</html>
 </body>
 </html>
