@@ -123,31 +123,131 @@
 
     <h2 style="text-align: center;">What You Can Do Here</h2>
     <div class="features">
-      <div class="feature-card">
-        <h3>🌍 Live Video Rooms</h3>
-        <p>Join voice & video conversations with parents from both countries.</p>
-      </div>
-      <div class="feature-card">
-        <h3>💬 Real-time Discussions</h3>
-        <p>Share stories, ask questions, and exchange parenting insights.</p>
-      </div>
-      <div class="feature-card">
-        <h3>🤝 Parent Matching</h3>
-        <p>Find parents with children of similar ages and interests.</p>
-      </div>
-      <div class="feature-card">
-        <h3>📚 Learning Resources</h3>
-        <p>Access bilingual materials and your PowerPoint learning tips.</p>
-      </div>
-    </div>
+      <div class="feature-card"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Community Hub | Principles of Early Learning</title>
+  <style>
+    :root {
+      --primary: #2c5aa0;
+      --light-bg: #f9f5f0;
+      --text: #333;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
 
-    <div style="text-align: center; margin: 4rem 0;">
-      <p style="font-size: 1.1em; color: #555;">
-        This space is built with love and care — just like how we raise our children.<br>
-        <strong>Be kind. Be respectful. Let's grow together.</strong>
-      </p>
-    </div>
+    header {
+      background: linear-gradient(135deg, #2c5aa0, #4a8cff);
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .logo-img {
+      height: 80px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .bilingual-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+      background: white;
+      padding: 8px 16px;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .hero {
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+      margin: 2rem 0;
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, #2c5aa0, #3b7dd4);
+      color: white;
+      padding: 18px 45px;
+      font-size: 1.25em;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 15px;
+      box-shadow: 0 6px 20px rgba(44, 90, 160, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="bilingual-toggle">
+    <button onclick="alert('中文 version coming soon ❤️')">EN / 中文</button>
   </div>
 
+  <header>
+    <div class="logo-container">
+      <img src="https://www.principlesofearlylearning.org/images/logo.png" 
+           alt="Principles of Early Learning" 
+           class="logo-img">
+      <div>
+        <h1 style="margin:0; font-size: 2.2rem;">Principles of Early Learning</h1>
+        <p style="margin:0; font-size: 1.3rem;">早教原则</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <h2>Welcome to Our Interactive Community Hub</h2>
+      <p style="font-size: 1.25em; max-width: 700px; margin: 1.5rem auto;">
+        A warm space where parents from China and America can connect, 
+        share experiences, learn together, and support each other in raising the next generation.
+      </p>
+      
+      <a href="#" class="cta-button">🚀 Join Live Conversation</a>
+      <a href="#" class="cta-button" style="background:#555;">💬 Start a Discussion</a>
+    </div>
+
+    <h2 style="text-align:center; color: var(--primary);">What You Can Do Here</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+      <div style="background:white; padding: 2rem; border-radius: 12px; text-align:center; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+        <h3>🌍 Live Video Rooms</h3>
+        <p>Real-time voice & video conversations between Chinese and American parents</p>
+      </div>
+      <div style="background:white; padding: 2rem; border-radius: 12px; text-align:center; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+        <h3>💬 Real-time Discussions</h3>
+        <p>Share stories, parenting challenges, and joyful moments</p>
+      </div>
+      <div style="background:white; padding: 2rem; border-radius: 12px; text-align:center; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+        <h3>🤝 Find Parent Friends</h3>
+        <p>Connect with parents who have children of similar ages</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
