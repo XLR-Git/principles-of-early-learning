@@ -3,29 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Principles of Early Learning</title>
+  <title>Interactive Community Hub | Principles of Early Learning</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f5f0; color: #333; }
-    header { background: #2c5aa0; color: white; padding: 2rem; text-align: center; }
-    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-    h1 { color: #2c5aa0; }
-    .bilingual-toggle { position: fixed; top: 20px; right: 20px; background: white; padding: 10px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    :root {
+      --primary: #2c5aa0;
+      --light: #f9f5f0;
+      --accent: #4a8cff;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light);
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .logo {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bilingual-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+      background: white;
+      padding: 8px 16px;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    h1, h2 {
+      color: var(--primary);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: white;
+      border-radius: 16px;
+      margin-bottom: 3rem;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, #2c5aa0, #3b7dd4);
+      color: white;
+      padding: 18px 45px;
+      font-size: 1.3em;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 10px;
+      box-shadow: 0 6px 20px rgba(44, 90, 160, 0.3);
+      transition: all 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(44, 90, 160, 0.4);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <div class="bilingual-toggle">
-    <button onclick="alert('中文 version coming soon')">English / 中文</button>
+    <button onclick="alert('中文 version coming soon ❤️')">🇺🇸 EN / 🇨🇳 中文</button>
   </div>
 
   <header>
-    <h1>Principles of Early Learning</h1>
-    <p>Building a peaceful world through early childhood education</p>
+    <div class="container">
+      <h1 class="logo">Principles of Early Learning</h1>
+      <p style="font-size: 1.3em; margin: 0;">早教原则</p>
+      <p>Connecting Chinese & American Parents • Building a Peaceful Future</p>
+    </div>
   </header>
 
   <div class="container">
-    <h2>Welcome</h2>
-    <p>This is the beginning of our new interactive platform.</p>
-    <p>We will gradually bring over all your photos, stories, and learning materials.</p>
+
+    <div class="hero">
+      <h2>Welcome to Our Interactive Community Hub</h2>
+      <p style="font-size: 1.25em; max-width: 700px; margin: 1.5rem auto;">
+        A warm and respectful space where parents from China and America can connect, 
+        share experiences, and support each other in raising the next generation.
+      </p>
+      <a href="#" class="cta-button">🚀 Join Live Conversation</a>
+      <a href="#" class="cta-button" style="background: #555;">💬 Start Discussion</a>
+    </div>
+
+    <h2 style="text-align: center;">What You Can Do Here</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>🌍 Live Video Rooms</h3>
+        <p>Join voice & video conversations with parents from both countries.</p>
+      </div>
+      <div class="feature-card">
+        <h3>💬 Real-time Discussions</h3>
+        <p>Share stories, ask questions, and exchange parenting insights.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🤝 Parent Matching</h3>
+        <p>Find parents with children of similar ages and interests.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📚 Learning Resources</h3>
+        <p>Access bilingual materials and your PowerPoint learning tips.</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin: 4rem 0;">
+      <p style="font-size: 1.1em; color: #555;">
+        This space is built with love and care — just like how we raise our children.<br>
+        <strong>Be kind. Be respectful. Let's grow together.</strong>
+      </p>
+    </div>
   </div>
+
 </body>
 </html>
